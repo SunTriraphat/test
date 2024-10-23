@@ -3,7 +3,6 @@ import React, { useState } from "react";
 const SortAndRemoveDuplicates = () => {
   const [arr] = useState([1, 5, 7, 4, 3, 2, 1, 5, 9, 0, 4, 2, 4, 5, 7, 2]);
 
-  // ลบค่าที่ซ้ำและเรียงลำดับ array
   const uniqueArray = [...new Set(arr)].sort((a, b) => a - b);
 
   return (

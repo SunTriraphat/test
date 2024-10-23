@@ -26,7 +26,6 @@ const No6 = () => {
       left join patient as p on p.cn_number = a.cn_number
       left join orders as o on p.cn_number = o.cn_number
       left join order_payments op on o.order_id = op.order_id
-      where o.status = 'ชำระเงินแล้ว'
       </p>
     </div>
   );
